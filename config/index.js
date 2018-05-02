@@ -19,8 +19,11 @@ module.exports = {
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+    // 设置热替换
+    hot: true,
+    // 设置页面引入
+    inline: true,
 
-    
     /**
      * Source Maps
      */
