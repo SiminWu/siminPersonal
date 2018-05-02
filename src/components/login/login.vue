@@ -1,7 +1,5 @@
 <style lang="less">
-
 </style>
-
 <template>
     <div class="login" @keydown.enter="handleSubmit">
         <div class="login-con">
@@ -26,7 +24,7 @@
                             </Input>
                         </FormItem>
                         <FormItem>
-                            <Button @click="successFun" type="primary">登录</Button>
+                            <Button @click="handleSubmit" type="primary">登录</Button>
                         </FormItem>
                     </Form>
                 </div>
@@ -34,7 +32,6 @@
         </div>
     </div>
 </template>
-
 <script>
 import Cookies from 'js-cookie';
 export default {
@@ -55,21 +52,15 @@ export default {
         };
     },
     methods: {
-      successFun(){
-          console.log(this)
-          this.$Message.success('This is a success tip');
-        },
         handleSubmit () {
             this.$refs.loginForm.validate((valid) => {
                 if (valid) {
                     Cookies.set('user', this.userForm.userName);
                     Cookies.set('password', this.userForm.password);
-                    this.isLoading = true;
                   this.$api.login({ mobile: this.userForm.userName, password: this.userForm.password }, (data) => { // 登录接口
-                    this.isLoading = false;
-
+                    this.$Message.success('登录成功');
                   }, (error) => {
-//                    this.$Message.error("登录失败")
+                    this.$Message.error("登录失败")
                   })
 
                 }
