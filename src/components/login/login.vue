@@ -1,6 +1,6 @@
 <template>
     <div class="login" @keydown.enter="handleSubmit">
-        <div class="login-con">
+        <div class="login-con test">
             <Card :bordered="false">
                 <p slot="title">
                     欢迎登录
@@ -67,6 +67,7 @@ export default {
     }
 };
 </script>
+<<<<<<< HEAD
 <style lang="less" scoped>
   .login{
     &-con{
@@ -86,4 +87,11 @@ export default {
       }
     }
   }
+=======
+
+<style lang="less" rel="stylesheet/less">
+    .test{
+        background-color: @color-1
+    }
+>>>>>>> 28fdb2684ebbb68c8e652917b0d649a5320d01c2
 </style>

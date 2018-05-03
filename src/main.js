@@ -6,6 +6,7 @@ import router from './router'
 import api from 'assets/api'; // 公共请求/接口
 import * as utils from 'assets/js/utils'; // 公共库
 import 'assets/css/my-theme/index.less';//主题色
+import 'assets/css/common.less';
 
 Vue.config.productionTip = false;
 Vue.prototype.$utils = utils; // 工具类

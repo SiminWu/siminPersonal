@@ -3,6 +3,7 @@ const path = require('path')
 const config = require('../config')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const packageConfig = require('../package.json')
+const fs = require('fs');
 
 exports.assetsPath = function (_path) {
   const assetsSubDirectory = process.env.NODE_ENV === 'production'
@@ -54,11 +55,30 @@ exports.cssLoaders = function (options) {
     }
   }
 
+  function getLessVariables(file) {
+    var themeContent = fs.readFileSync(file, 'utf-8')
+    var variables = {}
+    themeContent.split('\n').forEach(function(item) {
+        if (item.indexOf('//') > -1 || item.indexOf('/*') > -1) {
+            return
+        }
+        var _pair = item.split(':')
+        if (_pair.length < 2) return;
+        var key = _pair[0].replace('\r', '').replace('@', '')
+        if (!key) return;
+        var value = _pair[1].replace(';', '').replace('\r', '').replace(/^\s+|\s+$/g, '')
+        variables[key] = value
+    })
+    return variables
+  }
+
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),
-    less: generateLoaders('less'),
+    less: generateLoaders('less',{
+      globalVars: getLessVariables(config.themePath)
+    }),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),
