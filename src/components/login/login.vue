@@ -1,5 +1,3 @@
-<style lang="less">
-</style>
 <template>
     <div class="login" @keydown.enter="handleSubmit">
         <div class="login-con">
@@ -69,7 +67,23 @@ export default {
     }
 };
 </script>
-
-<style>
-
+<style lang="less" scoped>
+  .login{
+    &-con{
+      position: absolute;
+      right: 160px;
+      top: 50%;
+      transform: translateY(-60%);
+      width: 300px;
+      &-header{
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        padding: 30px 0;
+      }
+      .form-con{
+        padding: 10px 0 0;
+      }
+    }
+  }
 </style>
