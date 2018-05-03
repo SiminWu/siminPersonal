@@ -2,7 +2,7 @@
 </style>
 <template>
     <div class="login" @keydown.enter="handleSubmit">
-        <div class="login-con">
+        <div class="login-con test">
             <Card :bordered="false">
                 <p slot="title">
                     欢迎登录
@@ -70,6 +70,8 @@ export default {
 };
 </script>
 
-<style>
-
+<style lang="less" rel="stylesheet/less">
+    .test{
+        background-color: @color-1
+    }
 </style>
