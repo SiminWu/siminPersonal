@@ -4,10 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     vendor: [
-      "axios",
       "js-cookie",
-      "less",
-      "less-loader"
       ]
   },
   output: {
@@ -37,31 +34,3 @@ module.exports = {
     })
   ]
 };
-// const path = require('path');
-// const webpack = require('webpack');
-//
-// module.exports = {
-//   entry: {
-//     vendor: [
-//       'babel-polyfill',
-//       'axios',
-//       "vue-i18n",
-//     ]
-//   },
-//   output: {
-//     path: path.join(__dirname, './../static/js'),
-//     filename: '[name].dll.js',
-//     library: '[name]_library'
-//   },
-//   plugins: [
-//     new webpack.DllPlugin({
-//       path: path.join(__dirname, '.', '[name]-manifest.json'),
-//       name: '[name]_library'
-//     }),
-//     new webpack.optimize.UglifyJsPlugin({
-//       compress: {
-//         warnings: false
-//       }
-//     })
-//   ]
-// };
