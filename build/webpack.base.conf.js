@@ -16,10 +16,10 @@ module.exports = {
     app: './src/main.js'
   },
   externals: {
-    'vue': 'Vue',
-    'vue-router': 'VueRouter',
-    'vuex': 'Vuex',
-    'iview': 'iview',
+    'vue': 'window.Vue',
+    'vue-router': 'window.VueRouter',
+    'vuex': 'window.Vuex',
+    'iview': 'window.iview',
   },
   output: {
     path: config.build.assetsRoot,
