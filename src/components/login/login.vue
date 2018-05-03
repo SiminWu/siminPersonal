@@ -86,8 +86,7 @@ export default {
       }
     }
   }
-    .test{
-        background-color: @color-1
+    .test {
+      background-color: @color-1
     }
-
 </style>
