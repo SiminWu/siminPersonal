@@ -1,6 +1,6 @@
 <template>
     <div class="login" @keydown.enter="handleSubmit">
-        <div class="login-con test">
+        <div class="login-con">
             <Card :bordered="false">
                 <p slot="title">
                     欢迎登录
@@ -86,7 +86,4 @@ export default {
       }
     }
   }
-    .test {
-      background-color: @color-1
-    }
 </style>
