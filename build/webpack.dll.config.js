@@ -6,7 +6,6 @@ module.exports = {
     vendor: [
       "js-cookie",
       "vuex",
-      "router",
       'vue-router',
       "axios"
       ]

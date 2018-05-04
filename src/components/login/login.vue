@@ -1,32 +1,32 @@
 <template>
     <div class="login" @keydown.enter="handleSubmit">
         <div class="login-con">
-            <!--<Card :bordered="false">-->
+            <Card :bordered="false">
                 <p slot="title">
                     欢迎登录
                 </p>
                 <div class="form-con">
-                    <i-form ref="loginForm" :model="userForm" :rules="rules">
-                        <!--<FormItem prop="userName">-->
-                            <!--<i-input v-model="userForm.userName" placeholder="请输入用户名">-->
-                                <!--<span slot="prepend">-->
-                                    <!--<Icon :size="16" type="person"></Icon>-->
-                                <!--</span>-->
-                            <!--</i-input>-->
-                        <!--</FormItem>-->
-                        <!--<FormItem prop="password">-->
-                            <!--<i-input type="password" v-model="userForm.password" placeholder="请输入密码">-->
-                                <!--<span slot="prepend">-->
-                                    <!--<Icon :size="14" type="locked"></Icon>-->
-                                <!--</span>-->
-                            <!--</i-input>-->
-                        <!--</FormItem>-->
+                    <Form ref="loginForm" :model="userForm" :rules="rules">
+                        <FormItem prop="userName">
+                            <Input v-model="userForm.userName" placeholder="请输入用户名">
+                                <span slot="prepend">
+                                    <Icon :size="16" type="person"></Icon>
+                                </span>
+                            </Input>
+                        </FormItem>
+                        <FormItem prop="password">
+                            <Input type="password" v-model="userForm.password" placeholder="请输入密码">
+                                <span slot="prepend">
+                                    <Icon :size="14" type="locked"></Icon>
+                                </span>
+                            </Input>
+                        </FormItem>
                         <FormItem>
                             <Button @click="handleSubmit" type="primary">登录</Button>
                         </FormItem>
-                    </i-form>
+                    </Form>
                 </div>
-            <!--</Card>-->
+            </Card>
         </div>
     </div>
 </template>
