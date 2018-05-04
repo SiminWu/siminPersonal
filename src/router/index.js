@@ -1,6 +1,11 @@
+import Vue from 'vue'
+import Router from 'vue-router'
 import Login from 'components/login/login';
 
-const router = new VueRouter({
+Vue.use(Router)
+
+
+export default new Router({
   routes: [
     {
       path: '/',
@@ -10,4 +15,3 @@ const router = new VueRouter({
   ]
 })
 
-export default router;

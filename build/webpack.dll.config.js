@@ -5,6 +5,10 @@ module.exports = {
   entry: {
     vendor: [
       "js-cookie",
+      "vuex",
+      "router",
+      'vue-router',
+      "axios"
       ]
   },
   output: {
