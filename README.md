@@ -29,7 +29,7 @@ npm test
 ```
 
 ##* 项目目录
-``` bash
+``` 
 	  build
          |--- build.js
          |--- check-versions.js
