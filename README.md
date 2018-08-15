@@ -32,28 +32,22 @@ npm test
 ## 项目目录
 ``` 
 web-front
-    |-- build
-    |-- config
+    |-- build---（webpack配置目录）
+    |-- config ---（config文件主要是项目相关配置，当端口冲突时配置监听端口，打包输出路径及命名等）
     |-- src
         |-- common
-            |-- api
-            |-- css
-            |-- i18n
-            |-- js
-            |-- json
-        |-- components
-        |-- router
-        |-- store
-            |-- modules
-                actions.js
+            |-- api -----（后台接口统一配置）
+            |-- css ------（样式目录）
+            |-- js -----（共用js目录）
+        |-- components ---（公共组件）
+        |-- router  ----（路由配置）
+        |-- store ----
+            |--actions.js
                 getter.js
                 mutations.js
                 states.js
                 index.js
-        |-- vendor
-            App.vue
-            main.js
-    |-- static
+    |-- static------（静态资源文件）
         |-- font
         |-- images
         |-- js
@@ -68,14 +62,10 @@ web-front
 ## 规范标准
 ```
 js规范
-
 * 统一采用CommonJ规范
 * 遵循严格模式
 * 使用ES6/ES7语法糖
-
-
 css规范
-
 * 合理使用该id, 尽量避免使用id作为样式选项
 * css选择器，避免携带标签名
 * 采用精准选择，减少多重嵌套
@@ -84,30 +74,15 @@ css规范
 * 颜色值尽量采用十六进制，如#aaa, 不建议#aaaaaa
 * 分隔符可采用 - 或 _
 * 内容统一采用双引号
-* 声明顺序
-|-- 结构性
-    display
-    position, left, top, right, bottom
-    overflow, float, clear
-    margin, padding
-|-- 表现性
-    background, boder
-    font, text
-
-
 html规范
-
 * 尽可能的语义化
 * 多媒体回溯，例如img, 需带上 alt=""
 * 关注点分离，将css, html, js分离，避免在html嵌套其他
 * 减少没实际作用的标签
-
-
 一般规范
-
 * 文本缩进统一采用两个空格大小
 * 如果非函数，尽量减少多行注释
-* 使用Eslint检测代码格式
+* 使用Eslint检测代码格式(视情况而定)
 ```
 
 
