@@ -30,50 +30,51 @@ npm test
 
 ##* 项目目录
 ``` bash
-	 build
-     |--- build.js
-     |--- check-versions.js
-     |--- utils.js
-     |--- vue-loader.conf.js
-     |--- webpack.base.conf.js
-     |--- webpack.dev.conf.js
-     |--- ebpack.dll.config.js
-     |--- webpack.prod.conf.js	
-	 config
-		  |---dev.env.js
+	  build
+         |--- build.js
+         |--- check-versions.js
+         |--- utils.js
+         |--- vue-loader.conf.js
+         |--- webpack.base.conf.js
+         |--- webpack.dev.conf.js
+         |--- ebpack.dll.config.js
+         |--- webpack.prod.conf.js	
+	  config
+		      |---dev.env.js
           |---index.js
           |---prod.env.js
           |---test.env.js
-	 src
-		  |---common
+	  src
+       |---js
+		       |---common
            |---api
            |---config.js
            |---index.js
-			|---css
+			 |---css
            |---common.less
            |---constants.less
            |---theme.less
-			|---js
+			 |---js
            |---regexEnum.js
            |---utils.js
 		 components
 				   | （多个目录暂时未定）----（组件或页面）
-	 router
-			     |---路由
-	 store
-		 |---vuex数据
-	app.vue
-	main.js
-  static
-  test
-	.babelrc
-	.editorconfig
-	gitignore
-	.postcssrc.js
-	index.html
-	package.json
-	README.md
-	stats.json
+     router
+             |---路由
+     store
+       |---vuex数据
+    app.vue
+    main.js
+    static
+    test
+    .babelrc
+    .editorconfig
+    gitignore
+    .postcssrc.js
+    index.html
+    package.json
+    README.md
+    stats.json
 ```
 
 
