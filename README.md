@@ -30,51 +30,39 @@ npm test
 
 ##* 项目目录
 ``` 
-	  build
-         |--- build.js
-         |--- check-versions.js
-         |--- utils.js
-         |--- vue-loader.conf.js
-         |--- webpack.base.conf.js
-         |--- webpack.dev.conf.js
-         |--- ebpack.dll.config.js
-         |--- webpack.prod.conf.js	
-	  config
-		      |---dev.env.js
-          |---index.js
-          |---prod.env.js
-          |---test.env.js
-	  src
-       |---js
-		       |---common
-           |---api
-           |---config.js
-           |---index.js
-			 |---css
-           |---common.less
-           |---constants.less
-           |---theme.less
-			 |---js
-           |---regexEnum.js
-           |---utils.js
-		 components
-				   | （多个目录暂时未定）----（组件或页面）
-     router
-             |---路由
-     store
-       |---vuex数据
-    app.vue
-    main.js
-    static
-    test
-    .babelrc
-    .editorconfig
-    gitignore
-    .postcssrc.js
-    index.html
-    package.json
-    README.md
-    stats.json
+web-front
+    |-- build
+    |-- config
+    |-- src
+        |-- common
+            |-- api
+            |-- css
+            |-- i18n
+            |-- js
+            |-- json
+        |-- components
+        |-- router
+        |-- store
+            |-- modules
+                actions.js
+                getter.js
+                mutations.js
+                states.js
+                index.js
+        |-- vendor
+            App.vue
+            main.js
+    |-- static
+        |-- font
+        |-- images
+        |-- js
+    |-- docs
+        .babrlec
+        .gitignore
+        index.html
+        package.json
+        README.md
+
 ```
 
 
