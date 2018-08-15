@@ -27,8 +27,9 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-##* 项目目录
+##前端工程化
+------------------------
+## 项目目录
 ``` 
 web-front
     |-- build
