@@ -31,7 +31,7 @@ npm test
 ------------------------
 ## 项目目录
 ``` 
-web-front
+siminPersonal
     |-- build---（webpack配置目录）
     |-- config ---（config文件主要是项目相关配置，当端口冲突时配置监听端口，打包输出路径及命名等）
     |-- src
