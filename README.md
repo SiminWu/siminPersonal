@@ -84,7 +84,42 @@ html规范
 * 如果非函数，尽量减少多行注释
 * 使用Eslint检测代码格式(视情况而定)
 ```
+### 模块化
+### 组件化
+### 自动化
+## 技术选型
+### 前端框架
+```javascript
+* vue.js
+* vue-route
+* vuex
+* element
+* axio
+```
 
+### UI视图库
+```javascript
+* element
+```
+### 自动化构建工具
+```javascript
+* webpack
+```
+### 团队协作工具
+```javascript
+* git
+```
+### css预处理器
+```javascript
+* sass
+```
+### 长连接socket
+```javascript
+* socket.io
+```
+# 踩坑经验
+
+# 总结
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
